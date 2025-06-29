@@ -31,7 +31,7 @@ class ComfoclimeDataUpdateCoordinator(DataUpdateCoordinator):
             hass,
             _LOGGER,
             name=DOMAIN,
-            update_interval=timedelta(seconds=30),
+            update_interval=timedelta(seconds=60),
         )
 
     async def _async_update_data(self) -> dict[str, Any]:
